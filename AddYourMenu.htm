@@ -1,0 +1,100 @@
+<html>
+  <title>Add menu from</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 18px;
+      }
+      form {
+      border: 5px solid #f1f1f1;
+      }
+      input[type=text] {
+      width: 100%;
+      padding: 18px 8px;
+      margin: 10px 0;
+      display: inline-block;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-radius: 5px;
+      border-color: #A0522D;
+      box-sizing: border-box;
+      font-size: 15px;
+      }
+      button {
+      background-color: #A0522D	;
+      font-size: 18px;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grab;
+      width: 48%;
+      border-radius: 5px;
+      }
+      h1 {
+      text-align:center;
+      fone-size:18;
+      color: #A0522D;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 26px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+      <form action="https://7a10-2405-9800-b640-43b6-d4bc-e7d3-ab6e-d82a.ngrok-free.app/add_menu" method="POST">
+      <h1>Add Your Menu</h1>
+      <!-- <h2>เพิ่มเมนู</h2> -->
+      <div class="formcontainer">
+      <div class="container">
+        <label for="menuname"><strong>ชื่อเมนู</strong></label>
+        <input type="text" placeholder="พริงเกิลส์ รสซาวครีมหัวหอม" name="menu_name" required>
+        <label for="quantity"><strong>ปริมาณหนึ่งหน่วยบริโภค</strong></label>
+        <input type="text" placeholder="17 ชิ้น (25 กรัม)" name="quantity" required>
+        <label for="energy"><strong>พลังงาน (kcal)</strong></label>
+        <input type="text" placeholder="130" name="energy" required>
+        <label for="protein"><strong>โปรตีน (g)</strong></label>
+        <input type="text" placeholder="1" name="protein" required>
+        <label for="fat"><strong>ไขมัน (g)</strong></label>
+        <input type="text" placeholder="7" name="fat" required>
+        <label for="carbs"><strong>คาร์โบไฮเดรต (g)</strong></label>
+        <input type="text" placeholder="15" name="carbs" required>
+        <label for="fiber"><strong>ไฟเบอร์ (g)</strong></label>
+        <input type="text" placeholder="7" name="fiber" required>
+        <label for="sodium"><strong>โซเดียม (mg)</strong></label>
+        <input type="text" placeholder="15" name="sodium" required>
+        <label for="sugar"><strong>น้ำตาล (g)</strong></label>
+        <input type="text" placeholder="15" name="sugar" required>
+        <label>กรณีไม่ทราบ ใส่ "-" หรือ "0"</label>
+      </div>
+      <button type="submit"><strong>เพิ่มเมนู</strong></button>
+    </form>
+  </body>
+</html>
+      
